@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build GadgetInventory",
+			"type": "shell",
+			"command": "dotnet build GadgetInventory.csproj",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$msCompile"
+			]
+		},
+		{
+			"label": "verify GadgetInventory build",
+			"type": "shell",
+			"command": "dotnet build GadgetInventory.csproj --no-restore",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [
+				"$msCompile"
+			]
+		}
+	]
+}
